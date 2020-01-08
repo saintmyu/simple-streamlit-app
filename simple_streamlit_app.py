@@ -11,7 +11,7 @@ st.title('Simple Streamlit App')
 
 st.text('Type a number in the box below')
 
-n = st.number_input('Number', step=1)
+n = st.number_input('Number', step=1.0, min_value=0.0, max_value=10.0)
 
 st.write(f'{n} + 1 = {n+1}')
 
